@@ -9,8 +9,60 @@
 </head>
 
 <body>
+    <div class="main-container">
 
-    <script src="./app.js" defer></script>
+
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__heading">Tic-Tac-Toe</h1>
+            </div>
+        </header>
+        <main>
+            <div class="app">
+                <section class="players">
+                    <div class="players__player">
+                        <p class="player__name">Player 1</p>
+                    </div>
+                    <div class="players__player">
+                        <p class="player__name">Player 2</p>
+                    </div>
+                </section>
+                <section class="app__display">
+                    <div class="display__screen">
+                        <p class="display__text">next move</p>
+                    </div>
+                </section>
+                <section class="app__board">
+                    <div class="board__container">
+
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__text">Tic-Tic-Toe 2024</p>
+            </div>
+        </footer>
+        <script src="./app.js" defer></script>
+    </div>
+    <div class="name-form-container visible">
+        <form method="dialog" class="name-dialog">
+            <p>Please, Enter player Names</p>
+            <label for="board-size">Board-size:</label>
+            <input id="board-size" name='board size' type="number" min="3" max="10" required value="3">
+            <label for="win-count">Win-Count:</label>
+            <input id="win-count" name='win count' type="number" min="3" max="10" required value="3">
+            <label for="player1-name">Player 1 name:</label>
+            <input id="player1-name" name='player1' type=" text" required value="x">
+            <label for="player2-name">Player 2 name: </label>
+            <input id="player2-name" name="player2" type="text" required value='o'>
+            <button type="submit">Start game</button>
+        </form>
+    </div>
 </body>
+
+
+
 
 </html>

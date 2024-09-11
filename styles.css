@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(180deg, #ffa8b6 0%, #a28089 50%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: #edf7f6;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  color: #a28089;
+  padding: 10px;
+
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+  border-bottom: 1px solid #a28089;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+}
+.header__heading {
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+.app {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-around;
+}
+
+.app__display {
+  margin: 0;
+  padding: 0;
+}
+
+.display__screen {
+  border: 1px solid #a28089;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.display__text {
+  text-transform: uppercase;
+  color: #a28089;
+}
+
+.app__board {
+  min-height: 150px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+.footer__container {
+}
+.footer__text {
+  opacity: 20%;
+  letter-spacing: 4px;
+}
+
+.name-form-container {
+  background-color: #ffa8b6;
+  padding: 10px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.name-dialog {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.name-dialog p {
+  font-size: 16px;
+}
+
+button {
+  width: max-content;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background-color: #ffa8b6;
+  font-weight: 700;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.board__container {
+  height: 100%;
+  min-height: 250px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #a28089;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+}
