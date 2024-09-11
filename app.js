@@ -81,7 +81,7 @@ function ticTacToe() {
           verticalCount++;
           if (verticalCount === winCount) {
             log = currentPlayer + " wins";
-            return currentPlayer; // Winner found
+            return currentPlayer;
           }
         } else {
           verticalCount = 0; // Reset count
