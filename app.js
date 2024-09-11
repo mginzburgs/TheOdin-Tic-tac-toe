@@ -1,12 +1,12 @@
 function ticTacToe() {
   let log = "";
-  let rows = 3;
-  let columns = 3;
+  let rows = "";
+  let columns = "";
   const board = [];
   let player1 = "";
   let player2 = "";
   let currentPlayer = "";
-  let winCount = 3;
+  let winCount = "";
 
   const getBoardConsole = () => console.table(board);
   const getBoard = () => board;
@@ -34,8 +34,8 @@ function ticTacToe() {
     }
   };
 
-  const setWinCount = (winCount) => {
-    winCount = winCount;
+  const setWinCount = (amount) => {
+    winCount = parseInt(amount, 10);
   };
 
   const fillCell = (row, column) => {
@@ -191,8 +191,11 @@ function gameUI() {
       let player1 = document.getElementById("player1-name").value;
       let player2 = document.getElementById("player2-name").value;
       let boardSize = document.getElementById("board-size").value;
+      let winAmount = document.getElementById("win-count").value;
+
       game.setNames(player1, player2);
       showPlayerNames();
+      game.setWinCount(winAmount);
       game.createBoard(boardSize);
       drawBoard();
 
@@ -241,4 +244,3 @@ const UI = gameUI();
 
 UI.showPlayerNames();
 UI.setPlayerNames();
-game.isBoardFull();
